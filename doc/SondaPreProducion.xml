@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<PreProd xmlns="">
+	<Tipos>
+		<connector>
+			<Sonda>
+				<Nom>Sonda Expedients Creats</Nom>
+				<Estat>0</Estat>
+				<Descripcio>Sonda Expedients Creats</Descripcio>
+				<Tipo>Base de dades</Tipo>
+			</Sonda>
+			<Sonda>
+				<Nom>Sonda login Hestia</Nom>
+				<Estat>0</Estat>
+				<Descripcio>Sonda login Hestia</Descripcio>
+				<Tipo>Base de dades</Tipo>
+			</Sonda>
+			<Sonda>
+				<Nom>Sonda Personas Creadas</Nom>
+				<Estat>0</Estat>
+				<Descripcio>Sonda Personas Creadas</Descripcio>
+				<Tipo>Base de dades</Tipo>
+			</Sonda>
+			<Sonda>
+				<Nom>Web dobleauth Node1</Nom>
+				<Estat>0</Estat>
+				<Descripcio>Web dobleauth Node1</Descripcio>
+				<Tipo>Servei</Tipo>
+			</Sonda>
+			<Sonda>
+				<Nom>Proces Mini Yeti Node2</Nom>
+				<Estat>0</Estat>
+				<Descripcio>Proces Mini Yeti Node2</Descripcio>
+				<Tipo>Servei</Tipo>
+			</Sonda>
+			<Sonda>
+				<Nom>Web dobleauth Node2</Nom>
+				<Estat>0</Estat>
+				<Descripcio>Web dobleauth Node2</Descripcio>
+				<Tipo>Servei</Tipo>
+			</Sonda>
+			<Sonda>
+				<Nom>Sonda servei traspas lleida</Nom>
+				<Estat>0</Estat>
+				<Descripcio>Sonda servei traspas lleida</Descripcio>
+				<Tipo>Servei</Tipo>
+			</Sonda>
+			<Sonda>
+				<Nom>Sonda recursos de mes de 24h lleida</Nom>
+				<Estat>0</Estat>
+				<Descripcio>Sonda recursos de mes de 24h lleida</Descripcio>
+				<Tipo>Servei</Tipo>
+			</Sonda>
+			<Sonda>
+				<Nom>Sonda recursos de lleida amb reintents &gt;=5 pendents de traspassar</Nom>
+				<Estat>0</Estat>
+				<Descripcio>Sonda recursos de lleida amb reintents &gt;=5 pendents de traspassar</Descripcio>
+				<Tipo>Servei</Tipo>
+			</Sonda>
+			<Sonda>
+				<Nom>Certificat</Nom>
+				<Estat>0</Estat>
+				<Descripcio>Certificat</Descripcio>
+				<Tipo>Certificat</Tipo>
+			</Sonda>
+			<Sonda>
+				<Nom>certificat</Nom>
+				<Estat>1</Estat>
+				<Descripcio>certificat</Descripcio>
+				<Tipo>Certificat</Tipo>
+			</Sonda>
+		</connector>
+		<certificate>
+			<Sonda>
+				<Nom>Sonda Actuacions Creadas</Nom>
+				<Estat>0</Estat>
+				<Descripcio>Sonda Actuacions Creadas</Descripcio>
+				<Tipo>Base de dades</Tipo>
+			</Sonda>
+			<Sonda>
+				<Nom>Error foorprints incidencies</Nom>
+				<Estat>0</Estat>
+				<Descripcio>Error foorprints incidencies</Descripcio>
+				<Tipo>Suport</Tipo>
+			</Sonda>
+		</certificate>
+		<database>
+			<Sonda>
+				<Nom>VPN Node1</Nom>
+				<Estat>0</Estat>
+				<Descripcio>VPN Node1</Descripcio>
+				<Tipo>VPN</Tipo>
+			</Sonda>
+			<Sonda>
+				<Nom>VPN Node2</Nom>
+				<Estat>1</Estat>
+				<Descripcio>VPN Node2</Descripcio>
+				<Tipo>VPN</Tipo>
+			</Sonda>
+			<Sonda>
+				<Nom>Error foorprints respostes</Nom>
+				<Estat>0</Estat>
+				<Descripcio>Error foorprints respostes</Descripcio>
+				<Tipo>Suport</Tipo>
+			</Sonda>
+			<Sonda>
+				<Nom>Error Footprints</Nom>
+				<Estat>0</Estat>
+				<Descripcio>Error Footprints</Descripcio>
+				<Tipo>Footprints</Tipo>
+			</Sonda>
+			<Sonda>
+				<Nom>Error footprints posible servei parat</Nom>
+				<Estat>0</Estat>
+				<Descripcio>Error footprints posible servei parat</Descripcio>
+				<Tipo>Suport</Tipo>
+			</Sonda>
+			<Sonda>
+				<Nom>Servei Hèstia Node1</Nom>
+				<Estat>0</Estat>
+				<Descripcio>Servei Hèstia Node1</Descripcio>
+				<Tipo>Sevei</Tipo>
+			</Sonda>
+			<Sonda>
+				<Nom>Servei clickonce Node1</Nom>
+				<Estat>0</Estat>
+				<Descripcio>Servei clickonce Node1</Descripcio>
+				<Tipo>Servei</Tipo>
+			</Sonda>
+			<Sonda>
+				<Nom>Error ServidorSQL. </Nom>
+				<Estat>0</Estat>
+				<Descripcio>Error ServidorSQL. </Descripcio>
+				<Tipo>ServidorSQL</Tipo>
+			</Sonda>
+			<Sonda>
+				<Nom>Espai de disc dades SQL1</Nom>
+				<Estat>0</Estat>
+				<Descripcio>Espai de disc dades SQL1</Descripcio>
+				<Tipo>ServidorSQL</Tipo>
+			</Sonda>
+			<Sonda>
+				<Nom>Espai de disc log SQL1</Nom>
+				<Estat>0</Estat>
+				<Descripcio>Espai de disc log SQL1</Descripcio>
+				<Tipo>ServidorSQL</Tipo>
+			</Sonda>
+			<Sonda>
+				<Nom>Espai de disc dades SQL2</Nom>
+				<Estat>0</Estat>
+				<Descripcio>Espai de disc dades SQL2</Descripcio>
+				<Tipo>ServidorSQL</Tipo>
+			</Sonda>
+			<Sonda>
+				<Nom>Espai de disc log SQL2</Nom>
+				<Estat>0</Estat>
+				<Descripcio>Espai de disc log SQL2</Descripcio>
+				<Tipo>ServidorSQL</Tipo>
+			</Sonda>
+			<Sonda>
+				<Nom>Servei funcionament Hestia intern</Nom>
+				<Estat>0</Estat>
+				<Descripcio>Servei funcionament Hestia intern</Descripcio>
+				<Tipo>Servei</Tipo>
+			</Sonda>
+			<Sonda>
+				<Nom>Estst Mini Yeti</Nom>
+				<Estat>0</Estat>
+				<Descripcio>Estst Mini Yeti</Descripcio>
+				<Tipo>Servei</Tipo>
+			</Sonda>
+			<Sonda>
+				<Nom>Estst Mini Yeti</Nom>
+				<Estat>0</Estat>
+				<Descripcio>Estst Mini Yeti</Descripcio>
+				<Tipo>Servei</Tipo>
+			</Sonda>
+			<Sonda>
+				<Nom>Servei Hestia Node2</Nom>
+				<Estat>0</Estat>
+				<Descripcio>Servei Hestia Node2</Descripcio>
+				<Tipo>Servei</Tipo>
+			</Sonda>
+			<Sonda>
+				<Nom>Servei clickonce Node2</Nom>
+				<Estat>0</Estat>
+				<Descripcio>Servei clickonce Node2</Descripcio>
+				<Tipo>Servei</Tipo>
+			</Sonda>
+			<Sonda>
+				<Nom>Sonda monitor lleida</Nom>
+				<Estat>0</Estat>
+				<Descripcio>Sonda monitor lleida</Descripcio>
+				<Tipo>Servei</Tipo>
+			</Sonda>
+			<Sonda>
+				<Nom>Proces Mini Yeti Node1</Nom>
+				<Estat>0</Estat>
+				<Descripcio>Proces Mini Yeti Node1</Descripcio>
+				<Tipo>Servei</Tipo>
+			</Sonda>
+		</database>
+	</Tipos>
+	
+
+</PreProd>

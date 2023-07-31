@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Lectura documentos XML</h1>
+    <button type="button" id="boton">
+        Cargar 
+
+    </button>
+    <ul id="lista"></ul>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#boton").click(function(){
+                console.log("Antes del servicio");
+                $.get("doc/SondaPreProducion.xml", function(data){
+                    console.log("Leyendo");
+
+                    
+                    var html = "";
+                    
+                    $(data).find("Nom").each(function(){
+                        //RECUPERAMOS EL CONTENIDO DEL TAG
+                        var informacion = $(this).text();
+                        html += "<li>" +"<button>"+ informacion +"</button>"+ "</li>";
+
+                    });    
+                    $("#lista").html(html);
+                });
+                console.log("Después del servicio");
+            });
+
+        })
+    </script>
+</body>
+</html>
