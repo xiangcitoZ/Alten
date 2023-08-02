@@ -7,6 +7,10 @@
     <title>Document</title>
 </head>
 <body>
+
+    <header id="menu"></header>
+
+
     <h1>Lectura documentos XML</h1>
     <button type="button" id="boton">
         Cargar 
@@ -16,6 +20,9 @@
     <script src="js/jquery-3.6.1.min.js"></script>
     <script>
         $(document).ready(function(){
+
+            $("#menu").load("menu.html");
+
             $("#boton").click(function(){
                 console.log("Antes del servicio");
                 $.get("doc/SondaPreProducion.xml", function(data){
@@ -36,6 +43,15 @@
             });
 
         })
+
+
+
+    
+    
+
+
+
+    </script>
     </script>
 </body>
 </html>
