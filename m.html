@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="css/m.css">
+</head>
+<body>
+    <header id="menu"></header>
+
+
+    <table class="soporte-nav">
+        <caption>
+          <span data-value='positivo'>SÍ</span>
+          <span data-value='negativo'>NO</span>
+          <span data-value='indeterminado'>NS/NC</span>  
+        </caption>
+        <tbody>
+          <tr>
+            <td data-value='negativo'>
+              <img alt="IE" src="https://2.bp.blogspot.com/-B7NEoum9mRI/T0p7JrivTqI/AAAAAAAAAFU/NCoAVASIXAk/s200/Explorer.png">
+        </td>
+        <td data-value='positivo'><img alt="Firefox" src="https://4.bp.blogspot.com/-zOOeI0D-iUU/T0p7_tJx74I/AAAAAAAAAFg/KnVFeaKJ54A/s200/Firefox.png">
+        </td>
+        <td data-value='positivo'><img alt="Chrome" src="https://1.bp.blogspot.com/-AYoi11tNW3k/T0p8Zoj6MfI/AAAAAAAAAFs/BAXvm744k1c/s200/Google_chrome.png">
+        </td>
+        <td data-value='indeterminado'><img alt="Safari" src="https://2.bp.blogspot.com/-GGDSq9599dg/T0p84lWv0XI/AAAAAAAAAGE/S6ucN5aM2jY/s200/Safari.png">
+        </td>
+          </tr>
+          <tr>
+            <th>IE</th>
+            <th>Firefox</th>
+            <th>Chrome</th>
+            <th>Safari</th>
+          </tr>
+        </tbody>
+        </table>
+        
+        <p><a href='https://ksesocss.blogspot.com/2013/09/doble-dot-puro-Css.html'>Sólo es un juego Css para el blog</a></p>
+
+
+    <script src="../js/jquery-3.6.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#menu").load("menu.html");
+        })
+    </script>
+
+</body>
+</html>

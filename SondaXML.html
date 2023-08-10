@@ -5,18 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/m.css">
 </head>
 <body>
 
     <header id="menu"></header>
 
+    <h1>SUPPORT SONDA</h1>
 
-    <h1>Lectura documentos XML</h1>
+    <table class="soporte-nav">
+        <caption>
+          <span data-value='positivo'>Disponible</span>
+          <span data-value='negativo'>NO Disponible</span>
+          <span data-value='indeterminado'>Mantenimiento</span>  
+        </caption>
+        <tbody>
+        
+         
+        </tbody>
+        </table>
+
     <button type="button" id="boton">
         Cargar 
-
+  
     </button>
     <ul id="lista"></ul>
+
     <script src="js/jquery-3.6.1.min.js"></script>
     <script>
         $(document).ready(function(){
@@ -27,14 +41,21 @@
                 console.log("Antes del servicio");
                 $.get("doc/SondaPreProducion.xml", function(data){
                     console.log("Leyendo");
-
                     
                     var html = "";
                     
-                    $(data).find("Nom").each(function(){
+                    $(data).find("Sonda").each(function(){
                         //RECUPERAMOS EL CONTENIDO DEL TAG
-                        var informacion = $(this).text();
-                        html += "<li>" +"<button>"+ informacion +"</button>"+ "</li>";
+                        var nom = $(this).find('Nom').text();
+                        var est = $(this).find('Estat').text();
+                        var descripcio = $(this).find('Descripcio').text();
+                        html += "<li>" +"<select>"+ 
+
+                            "<option>" + nom +"</option>"
+                            +"<option>" + est +"</option>"+
+                            "<option>" + descripcio +"</option>"
+
+                            +"</select>"+ "</li>";
 
                     });    
                     $("#lista").html(html);
@@ -43,13 +64,6 @@
             });
 
         })
-
-
-
-    
-    
-
-
 
     </script>
     </script>
