@@ -50,14 +50,46 @@
                         var est = $(this).find('Estat').text();
                         var descripcio = $(this).find('Descripcio').text();
                         var tipo = $(this).find('Tipo').text();
-                        html += "<li>" +"<select>"+ 
+                        var color ;
 
-                            "<option>" + nom +"</option>"
-                            +"<option>" + est +"</option>"+
-                            "<option>" + descripcio +"</option>"+
-                            "<option>" + tipo +"</option>"
+                        if(est=="0"){
+                            color = "positivo";
+                        }else  {
+                            color = "negativo";
+                        }
 
-                            +"</select>"+ "</li>";
+                        html += "<table>"+
+                            "<thead>"+
+                                "<tr>"+
+                                    "<th> Nombre </th>"+
+                                    "<th> Descripción </th>"+
+                                    "<th> Tipo </th>"+
+                                    "<th> Estado </th>"+
+                                    "<th>  </th>"
+                                +"</tr>"    
+                            +"</thead>"
+                            +"<tbody>"+
+                                "<tr>"+
+                                "<td>"+ nom +"</td>"+    
+                                "<td>"+ descripcio +"</td>"+   
+                                "<td> "+ tipo + " </td>"+   
+                                "<td> "+ est +" </td>"+  
+                                "<td>  <span data-value= "+color + "> </span> </td>"+  
+                                "</tr>"  +
+                            "</tbody>"   
+
+                            +"</table>"
+
+
+                        // html += "<li>" +"<select>"+ 
+
+                        //     "<option>" + nom +"</option>"
+                        //     +"<option>" + est +"</option>"+
+                        //     "<option>" + descripcio +"</option>"+
+                        //     "<option>" + tipo +"</option>"
+                            
+
+                        //     +"</select>"+ "</li>";
 
                     });    
                     $("#lista").html(html);
