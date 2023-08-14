@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/m.css">
 </head>
 <body>
 
@@ -21,14 +22,28 @@
         </caption>
         <tbody>
         
-         
+
         </tbody>
         </table>
 
-    <button type="button" id="boton">
-        Cargar 
-  
-    </button>
+        <container>
+           
+            <details>
+              <summary class="success">UI Unit Tests</summary>
+              <ul>
+                <li> 
+                  <div class="success">Test 1<span class="status">succeeded</span></div>
+                </li>
+                <li>
+                  <div class="success">Test 2<span class="status">succeeded</span></div>
+                </li>
+              </ul>
+            </details>
+          
+            
+          </container>
+
+   
     <ul id="lista"></ul>
 
     <script src="js/jquery-3.6.1.min.js"></script>
@@ -36,9 +51,9 @@
         $(document).ready(function(){
 
             $("#menu").load("menu.html");
-
-            $("#boton").click(function(){
-                console.log("Antes del servicio");
+            
+            
+         
                 $.get("doc/SondaPreProducion.xml", function(data){
                     console.log("Leyendo");
                     
@@ -58,48 +73,95 @@
                             color = "negativo";
                         }
 
-                        html += "<table>"+
-                            "<thead>"+
-                                "<tr>"+
-                                    "<th> Nombre </th>"+
-                                    "<th> Descripción </th>"+
-                                    "<th> Tipo </th>"+
-                                    "<th> Estado </th>"+
-                                    "<th>  </th>"
-                                +"</tr>"    
-                            +"</thead>"
-                            +"<tbody>"+
-                                "<tr>"+
-                                "<td> "+ nom +" </td>"+    
-                                "<td> "+ descripcio +" </td>"+   
-                                "<td> "+ tipo + " </td>"+   
-                                "<td> "+ est +" </td>"+  
-                                "<td>  <span data-value= "+color + "> </span> </td>"+  
-                                "</tr>"  +
-                            "</tbody>"   
-
-                            +"</table>"
+                        html +=  "<container>"+
+           
+           "<details>"+
+             "<summary class='success'> "+ nom +"<span data-value= "+color + "> </span> </summary>"
+            +"<ul>"+
+               "<li>" 
+                 +"<div class='success'>Descripción<p class='status'> "+ descripcio +" </p></div>"+
+               "</li>"
+               +"<li>"+
+                 "<div class='success'>Tipo<p class='status'> "+ tipo +" </p></div>"
+               +"</li>"
+             "</ul>"
+           +"</details>"+
+         
+           
+        " </container>"
 
 
-                        // html += "<li>" +"<select>"+ 
-
-                        //     "<option>" + nom +"</option>"
-                        //     +"<option>" + est +"</option>"+
-                        //     "<option>" + descripcio +"</option>"+
-                        //     "<option>" + tipo +"</option>"
-                            
-
-                        //     +"</select>"+ "</li>";
 
                     });    
                     $("#lista").html(html);
                 });
-                console.log("Después del servicio");
-            });
+           
+
+
+            // $("#boton").click(function(){
+            //     console.log("Antes del servicio");
+            //     $.get("doc/SondaPreProducion.xml", function(data){
+            //         console.log("Leyendo");
+                    
+            //         var html = "";
+                    
+            //         $(data).find("Sonda").each(function(){
+            //             //RECUPERAMOS EL CONTENIDO DEL TAG
+            //             var nom = $(this).find('Nom').text();
+            //             var est = $(this).find('Estat').text();
+            //             var descripcio = $(this).find('Descripcio').text();
+            //             var tipo = $(this).find('Tipo').text();
+            //             var color ;
+
+            //             if(est=="0"){
+            //                 color = "positivo";
+            //             }else  {
+            //                 color = "negativo";
+            //             }
+
+            //             html += "<table class='soporte-nav'>"+
+            //                 "<thead>"+
+            //                     "<tr>"+
+            //                         "<th> Nombre </th>"+
+            //                         "<th> Descripción </th>"+
+            //                         "<th> Tipo </th>"+
+            //                         "<th> Estado </th>"+
+            //                         "<th>  </th>"
+            //                     +"</tr>"    
+            //                 +"</thead>"
+            //                 +"<tbody>"+
+            //                     "<tr>"+
+            //                     "<td> "+ nom +" </td>"+    
+            //                     "<td> "+ descripcio +" </td>"+   
+            //                     "<td> "+ tipo + " </td>"+   
+            //                     "<td> "+ est +" </td>"+  
+            //                     "<td>  <span data-value= "+color + "> </span> </td>"+  
+            //                     "</tr>"  +
+            //                 "</tbody>"   
+
+            //                 +"</table>"
+
+
+            //             // html += "<li>" +"<select>"+ 
+
+            //             //     "<option>" + nom +"</option>"
+            //             //     +"<option>" + est +"</option>"+
+            //             //     "<option>" + descripcio +"</option>"+
+            //             //     "<option>" + tipo +"</option>"
+                            
+
+            //             //     +"</select>"+ "</li>";
+
+            //         });    
+            //         $("#lista").html(html);
+            //     });
+            //     console.log("Después del servicio");
+            // });
 
         })
 
+        
     </script>
-    </script>
+    
 </body>
 </html>
