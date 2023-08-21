@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Cutive+Mono);
+
 * {position: relative;}
 html {
   font-family: cutive mono, monospace;
@@ -49,9 +49,7 @@ caption, th {background: #3D5B77; color: #089FD8;}
 th {font-size: 1rem; padding: .5rem 0;}
 td {background: #fff;}
 
-/* 
-estado
- */
+
 
 
  
